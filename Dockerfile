@@ -16,6 +16,6 @@ RUN ["apt-get", "install", "-y", "httpd"]
 RUN ["apt-get", "update"]
 RUN ["apt-get", "install", "-y", "java"]
 
-EXPOSE 80 443 444
+EXPOSE 80 443 444 8080 8081 8082
 
 CMD ["nginx", "-g", "daemon off;"]
